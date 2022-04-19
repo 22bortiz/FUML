@@ -18,6 +18,8 @@ public class Main extends Application {
 			URL url = new File("src/application/view/Main.fxml").toURI().toURL();
 	    	AnchorPane root = FXMLLoader.load(url);
 			Scene scene = new Scene(root,600,600);
+			primaryStage.getIcons().add(new Image("/application/images/fuml-logo.png"));
+			primaryStage.setTitle("Fully Automated-Unified Modeling Language");
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
